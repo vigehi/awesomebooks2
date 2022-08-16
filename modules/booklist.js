@@ -12,7 +12,8 @@ export default class List {
         this.loaded = true;
         const btnAdd = document.querySelector('.add-btn');
         // const currentDate = DateTime.now();
-        // document.querySelector('.time').innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED);
+        // document.querySelector('.time').innerHTML = currentDate.toLocaleString
+        // (DateTime.DATETIME_MED);
         btnAdd.addEventListener('click', (e) => {
           e.preventDefault();
           const form = document.forms[0];
