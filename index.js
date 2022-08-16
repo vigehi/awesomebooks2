@@ -1,3 +1,7 @@
+//import { List } from "./modules/booklist";
+
+//const list = new List();
+//list.load();
 
 
 const section = document.querySelector('.container');

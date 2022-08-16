@@ -7,14 +7,15 @@
     <title>Awesome Books</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="index.js" defer></script>
-    <script src="awesomeBooks.js" defer></script>
-    <script src="luxon.js"></script>
+    <script src="./node_modules/luxon/build/es6/luxon.js"></script>
   </head>
   <body>
     <section>
       <div class="container">
-        <div class="display-page">
+        <div id="list" class="display-page">
           <h2>All Awesome Books</h2>
+          <ul id="books-list book-list">
+        </ul>
         </div>
         <div class="add-page">
         <h2 class="container-h2">Add a new book</h2>
