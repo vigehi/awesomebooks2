@@ -80,12 +80,6 @@ h1 {
   color: rgb(67, 133, 246);
 }
 
-#displayDateTime {
-  float: right;
-  font-size: 20px;
-  font-style: italic;
-}
-
 .container {
   gap: 2.25rem;
 

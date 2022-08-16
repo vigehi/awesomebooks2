@@ -1,13 +1,9 @@
-// import { List } from "./modules/booklist";
-
-// const list = new List();
-// list.load();
+import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
 
 const section = document.querySelector('.container');
 const mainForm = document.getElementById('book-form');
 const displayPage = document.querySelector('.display-page');
-const currentDate = document.createElement('div');
-currentDate.id = 'displayDateTime';
+
 const navBar = document.createElement('ul');
 const navMenuDiv = document.createElement('div');
 navMenuDiv.className = 'nav-menu-div';
@@ -40,22 +36,9 @@ contactMenu.append(contactLink);
 navMenuDiv.append(contactMenu);
 navBar.append(navMenuDiv);
 navBar.prepend(navHeading);
+const currentDate = DateTime.now();
 
-const today = new Date();
-const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-const x = today.getHours() < 12 ? 'am' : 'pm';
-const time = `${today.getHours()
-}:${
-  today.getMinutes()
-}:${
-  today.getSeconds()
-} ${
-  x}`;
-
-const dateTime = `${date} ${time}`;
-// ar DateTime = luxon.DateTime;
-// const { DateTime } = require("luxon");
-currentDate.innerHTML = dateTime;
+document.querySelector('.time').innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED);
 
 class Book {
   constructor() {
@@ -175,5 +158,5 @@ if (fetchDataList !== null) {
   book.list = JSON.parse(fetchDataList);
   anyRandomNAme();
 }
-section.prepend(currentDate);
+
 section.prepend(navBar);
