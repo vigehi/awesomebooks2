@@ -38,6 +38,10 @@ header.nav-bar {
   border: solid 3px black;
 }
 
+a {
+  cursor: pointer;
+}
+
 section {
   display: block;
 }
