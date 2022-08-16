@@ -3,14 +3,10 @@
 import Nav from './nav.js';
 
 export class Book {
-    constructor() {
-      this.bobject = {};
-      this.list = [];
-    }
+  constructor() {
+    this.bobject = {};
+    this.list = [];
+  }
 }
 
 export const nav1 = new Nav();
-
-
-
- 

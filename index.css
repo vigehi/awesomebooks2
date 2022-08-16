@@ -8,6 +8,37 @@
   box-sizing: border-box;
 }
 
+
+h1.logo {
+  margin: auto 5px;
+  font-size: 1.23em;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.active {
+  color: blue;
+}
+
+li.link-item {
+  padding: 5px 10px;
+}
+
+ul.link-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+header.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border: solid 3px black;
+}
+
 a {
   cursor: pointer;
 }
@@ -181,4 +212,8 @@ footer {
 .input.add:active {
   transform: translate(6px, 6px);
   box-shadow: 0 0 0 0 black;
+}
+
+.time {
+  text-align: right;
 }

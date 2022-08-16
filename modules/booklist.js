@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-cycle
 import { Book, nav1 } from './book.js';
-import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 export default class List {
   constructor() {
@@ -31,8 +31,8 @@ export default class List {
              <h6>"${el.title}"  by ${el.author} </h6>
              <button type="button">Remove</button>
       </li>`).join('');
-    document.getElementById('books-list').innerHTML = this.htmlResult;
-    document.getElementById('books-list').querySelectorAll('button').forEach((btn, i) => {
+    document.getElementById('book-list').innerHTML = this.htmlResult;
+    document.getElementById('book-list').querySelectorAll('button').forEach((btn, i) => {
       btn.addEventListener('click', () => {
         this.remove(i);
       });
