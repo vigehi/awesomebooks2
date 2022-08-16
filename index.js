@@ -1,8 +1,7 @@
-//import { List } from "./modules/booklist";
+// import { List } from "./modules/booklist";
 
-//const list = new List();
-//list.load();
-
+// const list = new List();
+// list.load();
 
 const section = document.querySelector('.container');
 const mainForm = document.getElementById('book-form');
@@ -54,8 +53,8 @@ const time = `${today.getHours()
   x}`;
 
 const dateTime = `${date} ${time}`;
-//ar DateTime = luxon.DateTime;
-//const { DateTime } = require("luxon");
+// ar DateTime = luxon.DateTime;
+// const { DateTime } = require("luxon");
 currentDate.innerHTML = dateTime;
 
 class Book {
