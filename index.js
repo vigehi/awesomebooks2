@@ -95,18 +95,19 @@ const anyRandomNAme = () => {
     list1.appendChild(removeButton);
 
     bookList.appendChild(list1);
-    removeButton.addEventListener('click', function removeBtnHandler() {
+    removeButton.addEventListener('click',  ()=>{
       const getId = this.id;
       book.remove(getId);
       bookList.innerHTML = '';
       anyRandomNAme();
     });
+
   });
 };
 
 // SPA implementation
 
-function listBook() {
+const listBook = () => {
   displayPage.style.display = 'flex';
   displayPage.style.flexDirection = 'column';
   document.querySelector('.add-page').style.display = 'none';
@@ -131,12 +132,6 @@ contactLink.addEventListener('click', (e) => {
   document.querySelector('.add-page').style.display = 'none';
   document.querySelector('.contact-me').style.display = 'flex';
 });
-
-// const formHeading = document.createElement('h1');
-// formHeading.className = 'form-heading';
-// formHeading.textContent = 'All Awesome Books';
-
-// section.prepend(formHeading);
 
 const bookTitle = document.querySelector('#title');
 
