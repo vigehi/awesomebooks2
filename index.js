@@ -111,7 +111,7 @@ const listBook = () => {
   displayPage.style.flexDirection = 'column';
   document.querySelector('.add-page').style.display = 'none';
   document.querySelector('.contact-me').style.display = 'none';
-}
+};
 window.addEventListener('load', () => {
   listBook();
 });
