@@ -95,7 +95,7 @@ const anyRandomNAme = () => {
     list1.appendChild(removeButton);
 
     bookList.appendChild(list1);
-    removeButton.addEventListener('click', () => {
+    removeButton.addEventListener('click',  function removebtnhandler(){
       const getId = this.id;
       book.remove(getId);
       bookList.innerHTML = '';
